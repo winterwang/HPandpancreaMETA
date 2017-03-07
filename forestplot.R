@@ -9,7 +9,7 @@ tabletext<-cbind(
     "Gawin et al. 2012", "Hsu et al. 2014",
     "Qiao et al. 2012", "Dou et al. 2008",
     "Current study", NA, "Overall (Random Effect Model)"),
-  c("Cases", NA, "92", "121",
+  c("Case", NA, "92", "121",
     "45", "87", "104", "373",
     "761",  "19", "580", "139",
     "11",  "63",  "85", "360",  NA, NA),
@@ -49,4 +49,6 @@ forestplot(tabletext,
            mar = unit(rep(5, times = 4), "mm"),
            lineheight = "auto", 
            is.summary=c(rep(FALSE, 17), TRUE),
-           graphwidth = unit(8, "cm"))
+           graphwidth = unit(8, "cm"),
+           xlab="H.Pylori infection and Risk of Pancreatic Cancer",
+           lwd.xaxis = 2)
